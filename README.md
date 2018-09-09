@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/67f7afa8d1f449d9b85c3fce51b12a11)](https://www.codacy.com/app/prperiscal/common-collect?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=prperiscal/common-collect&amp;utm_campaign=Badge_Grade)
 # Common-Collect
 
 
