@@ -70,6 +70,26 @@
                 </configuration>
             </plugin>
         </plugins>
+
+        <extensions>
+            <extension>
+                <groupId>io.packagecloud.maven.wagon</groupId>
+                <artifactId>maven-packagecloud-wagon</artifactId>
+                <version>0.0.6</version>
+            </extension>
+        </extensions>
     </build>
+
+    <distributionManagement>
+        <repository>
+            <id>prperiscal-repo</id>
+            <url>packagecloud+https://packagecloud.io/Pablo/common-collect</url>
+        </repository>
+        <snapshotRepository>
+            <id>prperiscal-repo</id>
+            <url>packagecloud+https://packagecloud.io/Pablo/common-collect</url>
+        </snapshotRepository>
+    </distributionManagement>
+
 
 </project>
