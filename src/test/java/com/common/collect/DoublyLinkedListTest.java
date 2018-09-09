@@ -1,3 +1,5 @@
+package com.common.collect;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 import java.util.ConcurrentModificationException;
@@ -5,6 +7,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.stream.IntStream;
 
+import com.common.collect.DoublyLinkedList;
 import org.junit.Test;
 
 /**

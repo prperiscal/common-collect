@@ -1,3 +1,5 @@
+package com.common.collect;
+
 import static org.assertj.core.util.Preconditions.checkArgument;
 import static org.assertj.core.util.Preconditions.checkNotNull;
 
