@@ -53,6 +53,29 @@ public class DoublyLinkedList<E> extends AbstractList<E> {
     private static final int ENDPOINT = -2;
 
     /**
+     * The array buffer into which the nodes of the DoublyList are stored.
+     * The capacity of the DoublyList is the length of this array buffer. Any
+     * empty DoublyList with elementData == DEFAULTCAPACITY_EMPTY_ELEMENTDATA
+     * will be expanded to DEFAULT_CAPACITY when the first element is added.
+     */
+    private transient Node<E>[] nodes;
+
+    /**
+     * <p>Pointer to the first node in the linked list, or {@code null} if there are no nodes.</p>
+     */
+    private transient int firstNode;
+
+    /**
+     * <p>Pointer to the last node in the linked list, or {@code null} if there are no nodes.</p>
+     */
+    private transient int lastNode;
+
+    /**
+     * <p>Number of nodes in the array.</p>
+     */
+    private int size = 0;
+
+    /**
      * <p>Node model which contains the value and only one attribute as two way pointer.</p>
      */
     @Data
@@ -76,29 +99,6 @@ public class DoublyLinkedList<E> extends AbstractList<E> {
         private long link;
 
     }
-
-    /**
-     * The array buffer into which the nodes of the DoublyList are stored.
-     * The capacity of the DoublyList is the length of this array buffer. Any
-     * empty DoublyList with elementData == DEFAULTCAPACITY_EMPTY_ELEMENTDATA
-     * will be expanded to DEFAULT_CAPACITY when the first element is added.
-     */
-    private transient Node<E>[] nodes;
-
-    /**
-     * <p>Pointer to the first node in the linked list, or {@code null} if there are no nodes.</p>
-     */
-    private transient int firstNode;
-
-    /**
-     * <p>Pointer to the last node in the linked list, or {@code null} if there are no nodes.</p>
-     */
-    private transient int lastNode;
-
-    /**
-     * <p>Number of nodes in the array.</p>
-     */
-    private int size = 0;
 
     /**
      * <p>Constructs an empty list with an initial capacity of ten.</p>
